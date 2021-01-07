@@ -5,9 +5,9 @@ const AddMovie = ({addMovie}) => {
     const [show, setShow] = useState(false);
     const handleClose=()=>setShow(false);
     const handleShow=()=>setShow(true);
-    const [title, setTitle] = useState('')
-    const [poster, setPoster] = useState('')
-    const [description, setDescription] = useState('')
+    const [Title, setTitle] = useState('')
+    const [Poster, setPoster] = useState('')
+    const [Description, setDescription] = useState('')
     const [rate, setRate] = useState(0)
 
 
@@ -50,7 +50,7 @@ Add Movie
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={()=>{addMovie(title,poster,description,rate);setShow(false)}}>
+          <Button variant="primary" onClick={()=>{addMovie(Title,Poster,Description,rate);setShow(false)}}>
             Add Movie
           </Button>
         </Modal.Footer>
